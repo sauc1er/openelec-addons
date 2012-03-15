@@ -1,0 +1,24 @@
+commit ad983882c8cf620ed79609ba2a7e611583b1f30e
+Author: Stefan Saraev <stefan@saraev.ca>
+Date:   Thu Mar 15 20:05:19 2012 +0200
+
+    uxpxy: use '\r\n' in http headers instead of just '\n'
+
+diff --git a/udpxy.c b/udpxy.c
+index 1dd8ca7..4e75179 100644
+--- a/udpxy.c
++++ b/udpxy.c
+@@ -315,11 +315,11 @@ send_http_response( int sockfd, int code, const char* reason, ... )
+     msg[0] = '\0';
+ 
+     if ((200 == code) && g_uopt.h200_ftr[0]) {
+-        msglen = snprintf( msg, sizeof(msg) - 1, "HTTP/1.1 %d %s\n%s\n%s\n\n",
++        msglen = snprintf( msg, sizeof(msg) - 1, "HTTP/1.1 %d %s\r\n%s\r\n%s\r\n\r\n",
+             code, reason, CONTENT_TYPE, g_uopt.h200_ftr);
+     }
+     else {
+-        msglen = snprintf( msg, sizeof(msg) - 1, "HTTP/1.1 %d %s\n%s\n\n",
++        msglen = snprintf( msg, sizeof(msg) - 1, "HTTP/1.1 %d %s\r\n%s\r\n\r\n",
+                 code, reason, CONTENT_TYPE );
+     }
+     if( msglen <= 0 ) return ERR_INTERNAL;

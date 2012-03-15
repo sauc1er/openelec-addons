@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+	<string id="1000">General</string>
+	<string id="1020">General Configuration</string>
+	<string id="1021">Port to listen on</string>
+	<string id="1022">Max clients to serve</string>
+	<string id="1023">Interface of multicast source</string>
+</strings>
