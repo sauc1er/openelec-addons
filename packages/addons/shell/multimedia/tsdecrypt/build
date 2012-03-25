@@ -1,0 +1,7 @@
+#!/bin/sh
+
+. config/options $i
+
+cd $PKG_BUILD
+
+ $MAKE

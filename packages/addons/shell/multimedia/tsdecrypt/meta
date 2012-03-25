@@ -1,0 +1,18 @@
+PKG_NAME="tsdecrypt"
+PKG_VERSION="aee561c"
+PKG_REV="0"
+PKG_ARCH="any"
+PKG_LICENSE="GPL"
+PKG_SITE="http://georgi.unixsol.org/programs/tsdecrypt"
+PKG_URL="http://saraev.ca/${PKG_NAME}-${PKG_VERSION}.tar.xz"
+PKG_DEPENDS=""
+PKG_BUILD_DEPENDS="toolchain libdvbcsa"
+PKG_PRIORITY=optional
+PKG_SECTION=shell/multimedia
+PKG_SHORTDESC="tsdecrypt"
+PKG_LONGDESC="tsdecrypt reads incoming mpeg transport stream over UDP/RTP and then decrypts it using libdvbcsa and keys obtained from OSCAM or similar cam server"
+
+PKG_IS_ADDON="yes"
+PKG_ADDON_TYPE="xbmc.python.script"
+
+PKG_AUTORECONF="no"
