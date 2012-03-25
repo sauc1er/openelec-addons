@@ -1,0 +1,18 @@
+PKG_NAME="vlc"
+PKG_VERSION="1.1.5"
+PKG_REV=1""
+PKG_ARCH="any"
+PKG_LICENSE="GPL"
+PKG_SITE="http://www.videolan.org"
+PKG_URL="http://download.videolan.org/pub/videolan/vlc/1.1.5/vlc-1.1.5.tar.bz2"
+PKG_DEPENDS="zlib ffmpeg dbus libgcrypt gnutls"
+PKG_BUILD_DEPENDS="toolchain mpc libdvbpsi"
+PKG_PRIORITY=optional
+PKG_SECTION=shell/multimedia
+PKG_SHORTDESC="VideoLAN multimedia player and streamer"
+PKG_LONGDESC="VLC is the VideoLAN project's media player. It plays MPEG, MPEG2, MPEG4, DivX, MOV, WMV, QuickTime, mp3, Ogg/Vorbis files, DVDs, VCDs, and multimedia streams from various network sources."
+
+PKG_IS_ADDON="yes"
+PKG_ADDON_TYPE="xbmc.python.script"
+
+PKG_AUTORECONF="yes"

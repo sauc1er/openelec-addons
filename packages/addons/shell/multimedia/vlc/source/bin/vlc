@@ -1,0 +1,3 @@
+#! /bin/sh
+exec vlc.bin --plugin-path=/storage/.xbmc/addons/shell.multimedia.vlc/plugins --no-plugins-cache  -I "dummy" "$@"
+
