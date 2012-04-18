@@ -1,0 +1,16 @@
+commit eb4a9d26a8b754ead59416fd999569b879fa0a2c
+Author: Stefan Saraev <stefan@saraev.ca>
+Date:   Sun Mar 25 18:52:06 2012 +0300
+
+    crosscompile
+
+diff --git a/Makefile b/Makefile
+index 59f720f..a072c9b 100644
+--- a/Makefile
++++ b/Makefile
+@@ -1,5 +1,3 @@
+-CC = $(CROSS)$(TARGET)cc
+-STRIP = $(CROSS)$(TARGET)strip
+ MKDEP = $(CC) -M -o $*.d $<
+ RM = /bin/rm -f
+ 
