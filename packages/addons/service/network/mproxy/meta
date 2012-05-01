@@ -20,12 +20,12 @@
 ################################################################################
 
 PKG_NAME="mproxy"
-PKG_VERSION="0.1"
-PKG_REV="0"
+PKG_VERSION="583621d"
+PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
 PKG_SITE="http://www.openelec.tv"
-PKG_URL="http://saraev.ca/${PKG_NAME}-${PKG_VERSION}.tar.gz"
+PKG_URL="http://saraev.ca/${PKG_NAME}-${PKG_VERSION}.tar.xz"
 PKG_DEPENDS=""
 PKG_BUILD_DEPENDS="toolchain"
 PKG_PRIORITY="optional"
