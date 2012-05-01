@@ -56,6 +56,6 @@ if [ ! "$(pidof mproxy.bin)" ];then
     if [ -f "$LOCKDIR/$LOCKFILE" ] ; then
       break
     fi
-    mproxy.bin -f
+    mproxy.bin -f 2>>$LOG_FILE
   done &
 fi
